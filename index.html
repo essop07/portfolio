@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rayhan Motala | Web & Android App Developer</title>
+<meta name="description" content="Software developer building custom websites and Android apps: management systems, e-commerce and more. Python, Django, Flutter.">
+<meta property="og:title" content="Rayhan Motala | Web & Android App Developer">
+<meta property="og:image" content="assets/img/rayhan.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--text:#0f172a;--muted:#5b6477;--line:#e3e6ef;--a:#6d5efc;--b:#14b8a6;--glow:rgba(109,94,252,.18);box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0e17;--surface:#131826;--text:#eef1f8;--muted:#9aa4bb;--line:#222a3d;--a:#8b7dff;--b:#2dd4bf;--glow:rgba(139,125,255,.2)}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;line-height:1.15;margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem}.logo span{color:var(--a)}
+nav .links{display:flex;gap:20px;align-items:center;font-size:.92rem;color:var(--muted)}
+nav .links a:hover{color:var(--text)}
+@media(max-width:640px){nav .links a:not(.cta){display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:.95rem;border:1px solid var(--line);background:var(--surface);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:linear-gradient(135deg,var(--a),var(--b));color:#fff;border:0}
+.hero{padding:64px 0 56px;position:relative}
+.hero:before{content:"";position:absolute;inset:-60px 0 auto;height:420px;background:radial-gradient(60% 60% at 30% 30%,var(--glow),transparent);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1;max-width:240px}}
+.photo{position:relative;justify-self:center;width:100%;max-width:340px}
+.photo img{border-radius:50%;aspect-ratio:1;object-fit:cover;border:4px solid var(--surface);box-shadow:0 0 0 3px var(--a),0 24px 60px var(--glow)}
+.tag{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:99px;font-size:.82rem;color:var(--muted);background:var(--surface)}
+.tag i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--b);margin-right:8px}
+h1{font-size:clamp(2.1rem,5.5vw,3.7rem);margin:20px 0 16px;letter-spacing:-.02em}
+.grad{background:linear-gradient(135deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:540px;color:var(--muted);font-size:1.08rem;margin:0 0 26px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px;max-width:520px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat b{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;display:block}.stat span{color:var(--muted);font-size:.82rem}
+section{padding:56px 0}
+.eyebrow{color:var(--a);font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:8px 0 12px}
+.sub{color:var(--muted);max-width:560px;margin:0 0 30px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;margin-bottom:20px}
+.proj.feat{border-color:var(--a)}
+.proj-h{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.ico{flex:none;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,var(--glow),transparent);border:1px solid var(--line)}
+.proj h3{font-size:1.35rem;margin-bottom:6px}
+.proj p{margin:0;color:var(--muted);max-width:640px}
+.badge{font-size:.72rem;font-weight:600;color:var(--b);text-transform:uppercase;letter-spacing:.06em}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font-size:.75rem;padding:4px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.shots{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px;-webkit-overflow-scrolling:touch}
+.shots figure{margin:0;flex:none;width:200px;scroll-snap-align:start}
+.shots img{width:100%;aspect-ratio:400/800;object-fit:cover;object-position:top;border-radius:22px;border:6px solid #111;box-shadow:0 14px 34px var(--glow);background:#fff}
+.shots figcaption{text-align:center;font-size:.8rem;color:var(--muted);margin-top:8px}
+.cover{width:100%;border-radius:16px;border:1px solid var(--line);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:1.2rem;margin:12px 0 8px}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.soon{font-size:.72rem;color:var(--muted);margin-top:12px;display:block}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:10px 18px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-weight:500}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.step b{font-family:'Space Grotesk',sans-serif;color:var(--a);font-size:1.6rem}
+.contact{text-align:center;background:linear-gradient(135deg,var(--a),var(--b));color:#fff;border-radius:26px;padding:52px 24px}
+.contact p{opacity:.92;margin:0 auto 26px;max-width:480px}.contact .btn{background:#fff;color:#111;border:0}.contact .row{justify-content:center}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top">rayhan<span>.dev</span></a>
+<div class="links"><a href="#work">Work</a><a href="#stack">Stack</a><a href="#process">Process</a><a class="btn p cta" href="#contact" style="padding:8px 16px">Hire me</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<span class="tag"><i></i>Available for custom projects</span>
+<h1>I build <span class="grad">websites</span> &amp; <span class="grad">Android apps</span> that run your business.</h1>
+<p>Software developer creating fully custom management systems, from admin dashboards to mobile apps, built around how your business actually works.</p>
+<div class="row"><a class="btn p" href="#contact">Start a project</a><a class="btn" href="#work">See my work</a></div>
+<div class="stats">
+<div class="stat"><b>5+</b><span>Custom systems built</span></div>
+<div class="stat"><b>2</b><span>Platforms: Web &amp; Android</span></div>
+<div class="stat"><b>100%</b><span>Built to order</span></div>
+</div>
+</div>
+<div class="photo"><img src="assets/img/rayhan.jpg" alt="Rayhan Motala, software developer" width="520" height="520"></div>
+</div></header>
+
+<section id="work"><div class="wrap">
+<div class="eyebrow">Projects</div>
+<h2>Custom-built systems</h2>
+<p class="sub">Every project is tailored to the client’s exact needs, with no off-the-shelf templates. Swipe the screens to see the real apps.</p>
+
+<article class="proj feat">
+<div class="proj-h"><div class="ico">🕌</div><div><span class="badge">Featured · Android app</span><h3>Time Save System: Masjid Timings, Canada</h3>
+<p>An app holding data for masjids across Canada, with optimized delivery routing: plan the day’s stops, generate the best route, and see distance and drive time on the map.</p></div></div>
+<img class="cover" src="assets/img/delivery-optimization.jpg" alt="Delivery route optimization screen with map, stops, distance and drive time" loading="lazy">
+<div class="chips"><span>Flutter</span><span>Python</span><span>Django</span><span>Mapbox maps</span><span>Route optimization</span></div>
+</article>
+
+<article class="proj">
+<div class="proj-h"><div class="ico">🏠</div><div><span class="badge">Android app</span><h3>Rent Management System</h3>
+<p>Manage properties, tenants, monthly rent, electricity bills and old-tenant history, with paid and pending tracking in one app.</p></div></div>
+<div class="shots">
+<figure><img src="assets/img/rent-dashboard.jpg" alt="Rent app dashboard" loading="lazy"><figcaption>Dashboard</figcaption></figure>
+<figure><img src="assets/img/rent-properties.jpg" alt="All properties list" loading="lazy"><figcaption>Properties</figcaption></figure>
+<figure><img src="assets/img/rent-payments.jpg" alt="Monthly rent payments" loading="lazy"><figcaption>Rent payments</figcaption></figure>
+<figure><img src="assets/img/rent-electricity.jpg" alt="Electricity bills" loading="lazy"><figcaption>Electricity bills</figcaption></figure>
+</div>
+<div class="chips"><span>Flutter</span><span>Django</span><span>Python</span></div>
+</article>
+
+<article class="proj">
+<div class="proj-h"><div class="ico">🩺</div><div><span class="badge">Android app</span><h3>Clinic Management System</h3>
+<p>Add patient bills, track income by company, and generate monthly and yearly reports with downloadable PDFs for the clinic.</p></div></div>
+<div class="shots">
+<figure><img src="assets/img/clinic-dashboard.jpg" alt="Clinic dashboard" loading="lazy"><figcaption>Dashboard</figcaption></figure>
+<figure><img src="assets/img/clinic-add-bill.jpg" alt="Add bill form" loading="lazy"><figcaption>Add bill</figcaption></figure>
+<figure><img src="assets/img/clinic-reports.jpg" alt="Income reports" loading="lazy"><figcaption>Reports</figcaption></figure>
+<figure><img src="assets/img/clinic-companies.jpg" alt="Companies list" loading="lazy"><figcaption>Companies</figcaption></figure>
+</div>
+<div class="chips"><span>Flutter</span><span>Django</span><span>Python</span><span>PDF reports</span></div>
+</article>
+
+<div class="grid">
+<div class="card"><div class="ico">💪</div><h3>Gym Management System</h3><p>Members, plans, renewals and attendance, all organized for gym owners.</p><div class="chips"><span>Django</span><span>Tailwind</span><span>JS</span></div><span class="soon">Screenshots coming soon</span></div>
+<div class="card"><div class="ico">🛒</div><h3>E-commerce System</h3><p>A complete store with an admin panel for products and orders, and a user side for browsing and buying.</p><div class="chips"><span>Admin + User side</span><span>Django</span><span>Tailwind</span></div><span class="soon">Screenshots coming soon</span></div>
+</div>
+</div></section>
+
+<section id="stack"><div class="wrap">
+<div class="eyebrow">Tech stack</div><h2>Tools I build with</h2>
+<p class="sub">From pixel-clean frontends to solid backends and native-feeling Android apps.</p>
+<div class="skills"><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>JavaScript</span><span>Python</span><span>Django</span><span>Flutter</span></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<div class="eyebrow">How I work</div><h2>Simple, clear process</h2>
+<p class="sub">No surprises, from first chat to final delivery.</p>
+<div class="steps">
+<div class="card step"><b>01</b><h3>Discuss</h3><p>You tell me what your business needs.</p></div>
+<div class="card step"><b>02</b><h3>Design</h3><p>I plan the features and layout around it.</p></div>
+<div class="card step"><b>03</b><h3>Build</h3><p>Custom code on web and Android.</p></div>
+<div class="card step"><b>04</b><h3>Deliver</h3><p>Tested, handed over, and supported.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<h2 style="margin-top:0">Let’s build your system</h2>
+<p>Have an idea for a website or Android app? Reach out and let’s talk.</p>
+<div class="row">
+<a class="btn" href="mailto:motalarayhan10@gmail.com">✉️ motalarayhan10@gmail.com</a>
+<a class="btn" href="tel:+919687609331">📞 +91 96876 09331</a>
+<a class="btn" href="https://wa.me/919687609331">💬 WhatsApp</a>
+</div></div></div></section>
+
+<footer>© 2026 Rayhan Motala · Web &amp; Android Developer</footer>
+</body>
+</html>
